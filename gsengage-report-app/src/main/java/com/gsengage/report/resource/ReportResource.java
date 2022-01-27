@@ -2,7 +2,6 @@ package com.gsengage.report.resource;
 
 import com.gsengage.report.dto.Template;
 import com.gsengage.report.service.ReportService;
-import jdk.jfr.ContentType;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -23,4 +22,5 @@ public class ReportResource {
         String reportId = reportService.addReportTemplate(template);
         return Response.ok(reportId).status(201).build();
     }
+
 }

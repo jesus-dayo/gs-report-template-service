@@ -18,6 +18,8 @@ public class ReportService {
         Document document = new Document();
         document.append("templateId", template.getTemplateId());
         document.append("templateName", template.getTemplateName());
+        document.append("createdBy", template.getCreatedBy());
+        document.append("updatedBy", template.getUpdatedBy());
         getCollection().insertOne(document);
         return "reportId";
     }

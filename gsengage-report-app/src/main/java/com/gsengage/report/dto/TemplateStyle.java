@@ -8,11 +8,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @Getter
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class TemplateRow {
+public class TemplateStyle {
 
-    private int row;
-    private int column;
-    private String rowText;
-    private String rowKey;
-    private TemplateStyle templateStyle;
+    private String fontSize;
+    private String fontWeight;
 }
